@@ -30,6 +30,7 @@ a:hover {
 /* header  */
 header{
     position: relative;
+    margin-top: 20px;
     padding: 0 2rem;
 }
 .navbar {
@@ -40,6 +41,10 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.navbar .logo{
+    margin-top: 50px;
+    color: #fff;
 }
 
 .navbar .logo a {
@@ -93,7 +98,7 @@ header{
     transition: height 0.2 cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open{
-    height: 240px;
+    height: 280px;
 
 }
 .dropdown_menu li{
