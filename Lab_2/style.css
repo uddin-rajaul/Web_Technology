@@ -8,7 +8,7 @@
 body {
     height: 100vh;
     background-color: #000;
-    background-image: url(./background.jpg);
+    background-image: url(./valo.jpeg);
     background-size: cover;
     background-position: center;
 }
@@ -21,11 +21,11 @@ li {
 a {
     text-decoration: none;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
 }
 a:hover {
-    color: #900C3F;
+    color: #f1720a;
 }
 /* header  */
 header{
@@ -45,6 +45,7 @@ header{
 .navbar .logo{
     margin-top: 50px;
     color: #fff;
+
 }
 
 .navbar .logo a {
@@ -63,7 +64,8 @@ header{
     display: none;
 }
 .action_btn {
-    background-color: orange;
+    background: rgb(53,53,56);
+    background: linear-gradient(90deg, rgba(53,53,56,1) 0%, rgba(219,29,26,0.8911939775910365) 0%, rgba(215,201,201,1) 184%);
     color: #fff;
     padding: 0.5rem 1rem;
     border: none;
@@ -122,10 +124,92 @@ section#hero {
     text-align: center;
     justify-content: center;
 }
+@font-face {
+    font-family: 'ValorantFont';
+    src: url(./Valorant\ Font.ttf);
+}
 #hero h1{
+    font-family: 'ValorantFont';
     font-size: 3rem;
     margin-bottom: 1rem;
 }
+
+/* footer  */
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(0, 0, 0);
+    /* //background: linear-gradient(90deg, rgba(53,53,56,1) 0%, rgba(215,115,33,1) 100%); */
+    height:  auto;
+    width:  100vw;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 1px auto;
+    line-height: 20px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover{
+    color: #f1720a;
+}
+.footer-bottom{
+    background: rgb(0, 0, 0);
+    /* background: linear-gradient(90deg, rgba(53,53,56,1) 0%, rgba(215,115,33,1) 100%); */
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
 
 /* responsive design */
 @media(max-width: 992px){
